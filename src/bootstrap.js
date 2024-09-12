@@ -13,7 +13,7 @@ import couponRouter from './modules/coupon/coupon.routes.js'
 import cartRouter from './modules/cart/cart.routes.js'
 import orderRouter from "./modules/order/order.routes.js";
 const bootstrap=(app,express)=>{
-    const baseURL = '/api/v1'
+    const baseURL = 'https://fresh-cart-ecom-backend.vercel.app/'
     dbConnection();
     dotenv.config();
     app.use(express.json());
